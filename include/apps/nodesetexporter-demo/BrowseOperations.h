@@ -27,7 +27,7 @@
  */
 namespace apps::nodesetexporter::demo::browseoperations
 {
-using ::nodesetexporter::common::statuses::StatusResults;
+using StatusResults = ::nodesetexporter::common::statuses::StatusResults<>;
 using ::nodesetexporter::open62541::UATypesContainer;
 
 static std::vector<UATypesContainer<UA_ExpandedNodeId>> one_iteration_nodes; // Temporary Nodes for a Single Processing Iteration //NOLINT(cppcoreguidelines-avoid-non-const-global-variables)
